@@ -1,0 +1,23 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "gradle",
+			"id": "d:\\Projects\\RuneLite-Disable-Wearbuilddisablewearing",
+			"script": "build",
+			"description": "Assembles and tests this project.",
+			"group": "build",
+			"project": "disablewearing",
+			"buildFile": "D:\\Projects\\RuneLite-Disable-Wear\\build.gradle",
+			"rootProject": "disablewearing",
+			"projectFolder": "d:\\Projects\\RuneLite-Disable-Wear",
+			"workspaceFolder": "d:\\Projects\\RuneLite-Disable-Wear",
+			"args": "",
+			"javaDebug": false,
+			"problemMatcher": [
+				"$gradle"
+			],
+			"label": "gradle: build"
+		}
+	]
+}

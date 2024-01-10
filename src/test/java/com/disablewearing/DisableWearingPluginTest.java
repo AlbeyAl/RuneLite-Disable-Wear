@@ -1,13 +1,15 @@
-package com.example;
+package com.disablewearing;
+
+import com.disablewearing.DisableWearingPlugin;
 
 import net.runelite.client.RuneLite;
 import net.runelite.client.externalplugins.ExternalPluginManager;
 
-public class ExamplePluginTest
+public class DisableWearingPluginTest
 {
 	public static void main(String[] args) throws Exception
 	{
-		ExternalPluginManager.loadBuiltin(ExamplePlugin.class);
+		ExternalPluginManager.loadBuiltin(DisableWearingPlugin.class);
 		RuneLite.main(args);
 	}
 }
