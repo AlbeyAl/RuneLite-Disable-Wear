@@ -44,9 +44,6 @@ public class DisableWearingPlugin extends Plugin
     @Inject
     private Client client;
 
-    @Inject
-    private ScheduledExecutorService executor;
-
     private String items;
     private String[] itemList;
     private List<String> itemsList;
@@ -63,7 +60,7 @@ public class DisableWearingPlugin extends Plugin
 	{
 		if (event.getGroup().equals("disablewearing"))
 		{
-			executor.execute(this::reset);
+			reset();
 		}
 	}
 
@@ -72,7 +69,7 @@ public class DisableWearingPlugin extends Plugin
 	{
 		log.info("Disable Wearing started!");
         keyManager.registerKeyListener(hotkeyListener);
-        executor.execute(this::reset);
+        reset();
 	}
 
 	@Override
